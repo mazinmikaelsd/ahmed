@@ -83,7 +83,7 @@ if (message.content === '!spam') {
 
 
 client.on('message',function(message) {
-    let prefix = !";
+    let prefix = 1";
 let args = message.content.split(" ").slice(1).join(" ");
 if(message.content.startsWith(prefix + "say")) {
 if(!args) return;
