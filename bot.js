@@ -82,16 +82,11 @@ if (message.content === '!spam') {
 });
 
 
-client.on('message',function(message) {
-    let prefix = 1";
-let args = message.content.split(" ").slice(1).join(" ");
-if(message.content.startsWith(prefix + "say")) {
-if(!args) return;
-message.channel.send(`**[ ${args} ]**`); // محطوط # عشان محد يستخدم البوت لتبنيد / طرد احد من السيرفر
-}
-});
-
-
+client.on('ready', () => {//Toxic Codes
+    console.log(`Logged in as ${client.user.tag} !`);//Toxic Codes
+          client.user.setActivity("40M top .?  .",{type: 'WATCHING'});//Toxic Codes
+  //Toxic Codes
+  });//Toxic Codes
 
 
 
